@@ -1,5 +1,8 @@
 export default {
   mode: 'universal',
+
+  srcDir: 'src/',
+
   head: {
     title: 'Valdo Ghafoor - Web Developper',
     meta: [
