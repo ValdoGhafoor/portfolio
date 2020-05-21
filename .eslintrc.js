@@ -2,17 +2,17 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   extends: [
     '@nuxtjs',
     'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
   ],
   plugins: ['vue', 'prettier'],
   globals: {},
@@ -36,15 +36,15 @@ module.exports = {
           'internal',
           'parent',
           'sibling',
-          'index'
+          'index',
         ],
         pathGroups: [
           {
             pattern: '~/**',
-            group: 'internal'
-          }
-        ]
-      }
+            group: 'internal',
+          },
+        ],
+      },
     ],
     'vue/order-in-components': [
       'error',
@@ -71,9 +71,9 @@ module.exports = {
           'LIFECYCLE_HOOKS',
           'methods',
           ['template', 'render'],
-          'renderError'
-        ]
-      }
-    ]
-  }
+          'renderError',
+        ],
+      },
+    ],
+  },
 }

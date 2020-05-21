@@ -1,12 +1,10 @@
 <template>
   <header :class="$style.root">
-    <img src="~/assets/images/logo.png" />
+    <nuxt-link :class="$style.logoLink" :to="{ name: 'index' }">
+      <img src="~/assets/images/logo.svg" alt="Logo" :class="$style.logo" />
+    </nuxt-link>
 
-    <nav>
-      <nuxt-link :class="$style.link" :to="{ name: 'index' }">
-        Presentation
-      </nuxt-link>
-
+    <nav :class="$style.nav">
       <nuxt-link :class="$style.link" :to="{ name: 'work' }">
         Work
       </nuxt-link>
@@ -20,26 +18,58 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
 <style lang="scss" module>
 .root {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 
   display: flex;
-  justify-content: space-between;
 
   width: 100vw;
-  height: 48px;
+  height: 50px;
+  border-bottom: 1px dashed black;
+
+  color: black;
+
+  background: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.logoLink {
+  height: 100%;
   padding: $spacing;
+}
 
-  background: color(white);
+.logo {
+  width: auto;
+  height: 100%;
+}
 
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05),
-    0 2px 8px rgba(0, 0, 0, 0.05);
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: $spacing $spacing * 2;
+
+  color: black;
+
+  font-size: $font-size-l;
+
+  text-decoration: none;
+
+  &:hover {
+    background: grey;
+  }
 }
 </style>

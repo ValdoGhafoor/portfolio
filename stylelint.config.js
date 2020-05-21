@@ -7,9 +7,9 @@ module.exports = {
       {
         'border-in-box-model': true,
         'empty-line-between-groups': true,
-        severity: 'warning'
-      }
-    ]
+        severity: 'warning',
+      },
+    ],
   },
-  plugins: ['stylelint-order', 'stylelint-config-rational-order/plugin']
+  plugins: ['stylelint-order', 'stylelint-config-rational-order/plugin'],
 }
