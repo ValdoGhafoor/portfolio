@@ -70,14 +70,4 @@ const config = {
   },
 }
 
-if (process.env.NODE_ENV === 'production') {
-  // Conditionally add amp only on production so we don't loose hot reload on developement
-  config.modules.push([
-    '@nuxtjs/amp',
-    {
-      origin: 'https://valdoghafoor.com',
-    },
-  ])
-}
-
 export default config

@@ -15,7 +15,6 @@
     "stylelintfix": "yarn stylelint --fix"
   },
   "dependencies": {
-    "@nuxtjs/amp": "^0.2.4",
     "@nuxtjs/axios": "^5.3.6",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.0.0",

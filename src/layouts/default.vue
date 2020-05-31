@@ -38,6 +38,7 @@ export default {
       transparent 81px
     ),
     linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-position: 0 -1px;
   background-size: 100% 1.2em;
 }
 </style>

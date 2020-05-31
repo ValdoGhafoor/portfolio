@@ -3,6 +3,7 @@
     <a
       href="https://github.com/ValdoGhafoor"
       target="_blank"
+      rel="noopener"
       :class="$style.link"
     >
       <img src="~/assets/images/github.png" :class="$style.icon" />
@@ -10,6 +11,7 @@
     <a
       href="https://www.linkedin.com/in/valdo-ghafoor/"
       target="_blank"
+      rel="noopener"
       :class="$style.link"
     >
       <img src="~/assets/images/linkedin.png" :class="$style.icon" />
